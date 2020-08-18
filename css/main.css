@@ -26,6 +26,8 @@ h1, h2, h3, h4, h5, h6, span {
 .wrapper {
 	display: flex;
 	align-items: center;
+	position: relative;
+	z-index: 100;
 	justify-content: space-between;
 	flex-wrap: nowrap;
 	margin-bottom: 10px;
@@ -822,6 +824,10 @@ h1, h2, h3, h4, h5, h6, span {
 	text-transform: uppercase;
 	background-color: #43739b;
 	cursor: pointer;
+	transition: background-color .3s ease;
+}
+.submit:hover {
+	background-color: #3E6E96;
 }
 .footer {
 	display: flex;
@@ -970,8 +976,11 @@ h1, h2, h3, h4, h5, h6, span {
 	.imac {
 		height: 460px;
 	}
-	.W, .B, .T, .P {
+	.B, .T, .P {
 		left: 34.8%;
+	}
+	.W {
+		left: 23.8%;
 	}
 }
 @media screen and (max-width: 576px) {

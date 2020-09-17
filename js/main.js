@@ -54,15 +54,6 @@ $(function () {
 	    });
 	});
 	$(window).scroll(function() {
-	    $('.footer').each(function(){
-	        var imagePos = $(this).offset().top;
-	        var topOfWindow = $(window).scrollTop();
-	        if (imagePos < topOfWindow+600) {
-	            $(this).addClass("animate__fadeInUp");
-	        }
-	    });
-	});
-	$(window).scroll(function() {
 	    $('.container').each(function(){
 	        var imagePos = $(this).offset().top;
 	        var topOfWindow = $(window).scrollTop();
